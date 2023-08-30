@@ -11,45 +11,62 @@
     />
     <link rel="stylesheet" href="assets/css/Container.css" />
     <style>
-      .video {
-        margin-top: 52px;
-      }
       body {
         margin: 0;
       }
-      .logo {
-        width: 100%;
-        height: 80px;
-        background-color: #ed1c24;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: red;
       }
-      .logo > img {
+      .logo {
         width: 400px;
         height: 75px;
-        position: relative;
-        left: 5px;
       }
-      i.size {
+      .home-icon {
         color: white;
-        position: relative;
-        left: 90rem;
         font-size: 70px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      .video {
+        flex: 1;
+        position: relative;
+        margin-right: 20px;
+      }
+      .description {
+        flex: 1;
+        text-align: right;
+      }
+      .description > p {
+        font-size: 36px;
+      }
+      .description > h1 {
+        font-size: 48px;
       }
     </style>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="logo">
         <img src="./assets/images/logo/DET.png" alt="companylogo" />
-        <a href="./index.html"><i class="fa fa-home size"></i></a>
+      </div>
+      <div>
+        <a href="./index.html" class="home-icon"><i class="fa fa-home"></i></a>
       </div>
     </header>
-    <br />
     <div class="container">
       <div class="video">
         <!-- Embed your YouTube video here -->
         <iframe
           class="vid"
-          width="800"
+          width="100%"
           height="500"
           src="https://www.youtube.com/embed/kiZsVqPNbhs?start=1"
           title="YouTube video player"
@@ -61,9 +78,9 @@
       <div class="description">
         <h1>Vicki Bot</h1>
         <p>
-          Using power apps ,we have created Vicki the Smart bot which
+          Using power apps, we have created Vicki the Smart bot which
           effectively collects information from users, that will initiate the
-          appropriate approvals , also , keeping project details in a single
+          appropriate approvals, also, keeping project details in a single
           source file with the most up-to-date information.
         </p>
       </div>
