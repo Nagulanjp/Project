@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
+  background-color: #ed1c24;
 }
 
 .logo {
