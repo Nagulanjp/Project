@@ -15,7 +15,7 @@ body {
   height: 75px;
 }
 
-.home-icon {
+.fa {
   color: white;
   font-size: 70px;
 }
@@ -41,11 +41,12 @@ body {
 
 .description > p {
   font-size: 24px;
+  text-align:left;
 }
 
 .description > h1 {
   font-size: 36px;
-  text-align: left;
+  text-align: center;
 }
 
 /* Media query for smaller screens */
